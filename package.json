@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/alperenozdinc/amiral-batti/issues"
   },
-  "homepage": "https://github.com/alperenozdinc/amiral-batti#readme"
+  "homepage": "https://github.com/alperenozdinc/amiral-batti#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
