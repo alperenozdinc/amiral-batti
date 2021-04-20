@@ -2,7 +2,7 @@
   "name": "amiral-batti",
   "version": "1.0.0",
   "description": "Vanilla HTML, CSS, ve JavaScript ile yaptığım bir Amiral Battı oyunu. Şimdilik sadece offline oynanabilir.",
-  "main": "app.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
