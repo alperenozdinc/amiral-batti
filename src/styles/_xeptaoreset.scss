@@ -1,0 +1,137 @@
+/* xeptaoreset.css v1.0.0 | MIT License | https://github.com/xeptao/xeptaoreset.css */
+/* Copyright © 2021 Xeptao */
+/* Copyright © 2021 Nicolas Gallagher and Jonathan Neal */
+
+/*
+  * 1. Resets margins in all browsers.
+  * 2. Resets padding in all browsers.
+  * 3. Sets box sizing to a better one in all browsers.
+  * 4. Enables subpixel font antialiasing for WebKit.
+  * 5. Changes the tap highlight color to transparent on mobile.
+*/
+
+*,
+*::before,
+*::after {
+	margin: 0; /* 1 */
+	padding: 0; /* 2 */
+	box-sizing: border-box; /* 3 */
+	-webkit-font-smoothing: antialiased; /* 4 */
+	-webkit-tap-highlight-color: transparent; /* 5 */
+}
+
+/* Sets the tab size to a more readable value in all browsers. */
+
+:root {
+	tab-size: 3;
+}
+
+/*
+  * 1. Sets minimum width of the html and body element to 100% in order to avoid bugs.
+  * 2. Sets minimum heigh of the html and body element to 100vh in order to avoid bugs.
+  * 3. Disables horizontal scrolling.
+*/
+
+html,
+body {
+	min-width: 100%; /* 1 */
+	min-height: 100vh; /* 2 */
+	overflow-x: hidden; /* 3 */
+}
+
+/* Prevents adjustments of font size after orientation changes. */
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+/*
+  * 1. Sets Inter as the font family, if it's not found, goes for the default font family of user's OS.
+  * 2. Sets the line height to a more readable&aesthetic value.
+  * 3. Makes the letter spacing just a little bit more smaller.
+*/
+
+/* You can install the typeface "Inter" from: https://github.com/rsms/inter/ */
+
+body {
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* 1 */
+	line-height: 1.4; /* 2 */
+	letter-spacing: -0.005em; /* 3 */
+}
+
+/*
+	Makes the "b" and "strong" tag the same weight in all browsers.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/*
+	Inheriting the font styles on the elements that don't inherit font styles.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	text-transform: inherit;
+}
+
+/*
+	Makes sure the "abbr" tag has a dotted underline in all browsers.
+*/
+
+abbr {
+	text-decoration: underline dotted;
+}
+
+/*
+	Makes sure the "small" tag is actually small in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/*
+	* 1. Makes the "sub" & "sup" the same size.
+	* 2. Makes the "sub" & "sup" not effect the line height.
+	* 3. Makes the "sub" & "sup" not overflow from their parent.
+	* 4. Makes the "sub" & "sup" not effect the vertical alignment.
+*/
+
+sub,
+sup {
+	font-size: 75%; /* 1 */
+	line-height: 0; /* 2 */
+	position: relative; /* 3 */
+	vertical-align: baseline; /* 4 */
+}
+
+/*
+	Pushes the "sub" tag to the bottom the same amount in all browsers.
+*/
+
+sub {
+	bottom: -0.25em;
+}
+
+/*
+	Pushes the "sup" tag to the top the same amount in all browsers.
+*/
+
+sup {
+	top: -0.5em;
+}
+
+/*
+	Removes the very subtle border around the "img" tag in all browsers.
+*/
+
+img {
+	border-style: none;
+}

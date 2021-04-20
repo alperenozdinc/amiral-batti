@@ -8,7 +8,7 @@ const uglify = require("gulp-uglify");
 const browsersync = require("browser-sync").create();
 
 function compileSass() {
-	return src("./src/styles/*")
+	return src("./src/styles/styles.scss")
 		.pipe(sass())
 		.pipe(minify())
 		.pipe(rename({ suffix: ".min" }))
