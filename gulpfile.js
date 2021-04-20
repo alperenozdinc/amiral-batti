@@ -6,13 +6,14 @@ const sass = require("gulp-sass");
 const minify = require("gulp-minify-css");
 const uglify = require("gulp-uglify");
 const browsersync = require("browser-sync").create();
+const imagemin = require("gulp-imagemin");
 
 function compileSass() {
 	return src("./src/styles/styles.scss")
 		.pipe(sass())
 		.pipe(minify())
 		.pipe(rename({ suffix: ".min" }))
-		.pipe(dest("./build/static/js/"));
+		.pipe(dest("./build/static/css/"));
 }
 
 function minifyJs() {
@@ -42,4 +43,9 @@ function watchTask() {
 	watch("./build/index.html", browserSyncReload);
 }
 
+function minifyImages() {
+	return src("./src/img/*").pipe(imagemin()).pipe(dest("./build/static/img/"));
+}
+
 exports.default = series(initializeServer, watchTask);
+exports.img = minifyImages();
