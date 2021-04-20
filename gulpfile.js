@@ -16,7 +16,10 @@ function compileSass() {
 }
 
 function minifyJs() {
-	return src("./src/scripts/*").pipe(uglify()).pipe(dest("./build/static/js/"));
+	return src("./src/scripts/*")
+		.pipe(uglify())
+		.pipe(rename({ suffix: ".min" }))
+		.pipe(dest("./build/static/js/"));
 }
 
 function initializeServer(cb) {
