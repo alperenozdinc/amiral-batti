@@ -1,0 +1,27 @@
+{
+  "name": "amiral-batti",
+  "version": "1.0.0",
+  "description": "Vanilla HTML, CSS, ve JavaScript ile yaptığım bir Amiral Battı oyunu. Şimdilik sadece offline oynanabilir.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alperenozdinc/amiral-batti.git"
+  },
+  "keywords": [
+    "amiral",
+    "battı",
+    "oyun",
+    "vanilla",
+    "sade",
+    "offline"
+  ],
+  "author": "Alperen Özdinç",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alperenozdinc/amiral-batti/issues"
+  },
+  "homepage": "https://github.com/alperenozdinc/amiral-batti#readme"
+}
